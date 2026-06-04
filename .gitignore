@@ -1,0 +1,34 @@
+# ---- Build output (always ignore) ----
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+*.dll
+*.pdb
+*.exe
+
+# ---- Visual Studio / user-specific ----
+.vs/
+*.user
+*.suo
+*.userprefs
+*.cache
+
+# ---- NuGet ----
+*.nupkg
+packages/
+
+# ---- Packaged deliverables (too big for git; ship via GitHub Releases) ----
+*.zip
+
+# ---- OS noise ----
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ---- Internal working files (do NOT publish to the client) ----
+# These live in the parent folder if your repo root is DriveReadIndicator/,
+# but are listed here too in case you init git one level up.
+PROGRESS.md
+vbnet_drive_read_indicator_development_plan.md
+TestEvidence/_harness.ps1
